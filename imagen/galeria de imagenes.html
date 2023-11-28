@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería 3D Interactiva en Anillo</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #333;
+            transition: background-color 0.5s ease;
+        }
+
+        .gallery-container {
+            display: flex;
+            transform-style: preserve-3d;
+            transition: transform 0.5s ease;
+            align-items: center;
+        }
+
+        .gallery-item {
+            width: 150px;
+            height: 100px;
+            margin: 10px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            cursor: pointer;
+            transform-origin: center;
+            transition: transform 0.5s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+
+<div class="gallery-container">
+    <div class="gallery-item" style="background-image: url('imagenes/imagen1.jpg');"></div>
+    <div class="gallery-item" style="background-image: url('imagenes/imagen2.jpg');"></div>
+    <div class="gallery-item" style="background-image: url('imagenes/imagen3.jpg');"></div>
+    <div class="gallery-item" style="background-image: url('imagenes/imagen4.jpg');"></div>
+    <div class="gallery-item" style="background-image: url('imagenes/imagen5.jpg');"></div>
+</div>
+
+<script>
+    const container = document.querySelector('.gallery-container');
+    const body = document.body;
+
+    container.addEventListener('mousemove', (e) => {
+        const x = (window.innerWidth / 2 - e.pageX) / 25;
+        const y = (window.innerHeight / 2 - e.pageY) / 25;
+        container.style.transform = `rotateX(${y}deg) rotateY(${x}deg)`;
+    });
+
+    container.addEventListener('mouseleave', () => {
+        container.style.transform = 'rotateX(0) rotateY(0)';
+    });
+
+    container.addEventListener('click', () => {
+        const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+        body.style.backgroundColor = randomColor;
+    });
+</script>
+
+</body>
+</html>

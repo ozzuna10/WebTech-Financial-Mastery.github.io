@@ -1,0 +1,70 @@
+body {
+    background: linear-gradient(320deg, #ff0000, #4e4646, #200e97);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.peluqueria {
+    height: 100vh;
+    background: url('imagenes/salon.jpg') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Color blanco para el texto */
+    text-align: center;
+    filter: brightness(0.7);
+}
+
+.titulo {
+    z-index: 2;
+}
+
+.titulo h1 {
+    margin: 0;
+    font-size: 3em;
+    color: #ffffff; /* Un color más claro que el fondo */
+}
+
+.titulo p {
+    margin-top: 10px;
+    color: #ffffff; /* Un color más claro que el fondo */
+}
+
+
+section {
+    padding: 100px;
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    filter: brightness(0.7); /* Ajusta el brillo para hacer la imagen más oscura */
+}
+
+#quiensoy {
+    background: url('imagenes/salon1.jpg') center/cover ;
+}
+
+#dondeestoy {
+    background-image: url('imagenes/salon2.jpg');
+}
+
+#horarios {
+    background-image: url('imagenes/salon3.jpg');
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin: 5px;
+}
