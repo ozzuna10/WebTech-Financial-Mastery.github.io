@@ -14,8 +14,8 @@ I transform concepts into code, leveraging the full power of JavaScript for:
 I'm open to exploring new opportunities and exciting collaborations! You can find me at:
 
 📧 Email: malikhadimgadiagachavez@gmail.com
-💼 LinkedIn: LinkedIn Profile
-🌐 Personal Website: My Website
+💼 LinkedIn: www.linkedin.com/in/mξliфdдs-yt-a43667272
+🌐 Personal Website: https://ozzuna10.github.io/
 🌟 Let's Explore the Code!
 Dive into my repositories and discover how pure JavaScript can create impactful web experiences. I hope you find inspiration and utility!
 
