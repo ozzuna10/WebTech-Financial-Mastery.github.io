@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del cuerpo del documento */
+body {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #d3d3d3;
+}
+
+.texto-redondeado {
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenido-header {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 30px;
+}
+
+#logo img {
+    border-radius: 25%;
+    width: 50px;
+    height: 50px;
+}
+
+.nav-main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #1ad5ee;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.redes a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.redes a:hover {
+    color: #12ddef;
+}
+
+.presentacion-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imagenes/_b65a0d98-0b11-42cc-ab41-256336c73072.jpeg) center center / cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Evita que el contenido se extienda más allá del contenedor */
+}
+
+.presentacion {
+    max-width: 800px; /* Reducir el ancho máximo para centrar el contenido */
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    position: relative; /* Añadir posición relativa para z-index funcione correctamente */
+}
+
+.presentacion .bienvenida {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.presentacion h2 {
+    font-size: 36px; /* Aumentar tamaño de fuente para mayor legibilidad */
+    margin-bottom: 25px;
+}
+
+.presentacion h2 span {
+    font-size: 40px; /* Aumentar tamaño de fuente para mayor contraste */
+    color: red;
+}
+
+.presentacion .descripcion {
+    max-width: 100%;
+    margin: 25px 50px;
+    font-size: 18px;
+}
+
+.presentacion a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px 0;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.presentacion a:hover {
+    background-color: aqua;
+}
+
+#icono-nav {
+    color: #fff;
+    display: none;
+    cursor: pointer;
+}
+
+
+
+/* Seccion de preguntas frecuentes */
+/* Sección de preguntas frecuentes */
+#FAQ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+    width: 100%; /* Ajuste para ocupar todo el ancho */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagenes/_2b05413c-c5e1-430c-b77f-b1ae0db0a715.jpeg') center center / cover no-repeat;
+    color: #fff; /* Texto en blanco para mejor visibilidad */
+    padding: 50px; /* Espacio adicional para contenido */
+}
+
+#FAQ .titulo-seccion {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #fff; /* Texto en blanco para mejor visibilidad */
+}
+
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+.servicio {
+    max-width: 350px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    padding: 30px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.servicio:hover {
+    box-shadow: 5px 5px 10px #201f1f, -5px -5px 10px #8a8a8a;
+}
+
+.servicio h4 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #000; /* Texto en negro */
+}
+
+.servicio p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #000; /* Texto en negro */
+}
+
+.servicio hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+/* Estilo para la sección "Nuestra Filosofía y Compromiso" */
+#Nuestra-Filosofía-y-Compromiso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+    width: 100%; /* Ajuste para ocupar todo el ancho */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagenes/descargar.jpeg') center center / cover no-repeat;
+    color: #fff; /* Texto en blanco para mejor visibilidad */
+    padding: 50px; /* Espacio adicional para contenido */
+}
+
+.Titulo-f{
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-align: center; /* Alineación centrada */
+    color: #000; /* Texto en negro */
+}
+
+.seccion-pares {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px auto; /* Ajuste el margen según su preferencia */
+    max-width: 1100px;
+}
+
+.section {
+    max-width: 350px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+    padding: 30px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.section:hover {
+    box-shadow: 5px 5px 10px #201f1f, -5px -5px 10px #8a8a8a;
+}
+
+.section h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    text-align: center; /* Alineación centrada */
+    color: #000; /* Texto en negro */
+}
+
+.section p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #000; /* Texto en negro */
+}
+
+.section ul {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.section li {
+    margin-bottom: 10px;
+}
+
+.section hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    /* Estilos para el menú responsivo */
+#nav.responsive {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: calc(100vh - 60px); /* Calcula el alto del viewport menos la altura del header */
+    position: absolute;
+    top: 60px; /* Posiciona debajo del header */
+    left: 0;
+    padding: 10px 0;
+    margin: 0;
+}
+
+#nav.responsive ul {
+    display: block;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    #nav.responsive ul li {
+        margin: 10px 0;
+        text-align: left; /* Alinea los elementos del menú a la izquierda */
+    }
+}
+
+#nav.responsive ul {
+    display: block !important;
+    text-align: center;
+}
+
+#nav.responsive ul li {
+    margin: 5px 0;
+    text-align: left; /* Alinea los elementos del menú a la izquierda */
+} 
+
+@media screen and (max-width: 800px) {
+nav.responsive ul {
+    display: block !important;
+    text-align: center;
+    }
+    
+nav.responsive ul li {
+margin-bottom: 10px; /* Ajusta el margen inferior entre elementos */
+}
+}
+
+/* Media queries para tabletas y dispositivos móviles */
+@media (max-width: 768px) {
+    .nav-main {
+        display: none; /* Oculta la barra de navegación en tamaños pequeños */
+    }
+
+    #icono-nav {
+        display: block; /* Muestra el icono de navegación en tamaños pequeños */
+    }
+
+    .redes {
+        display: none; /* Oculta las redes sociales en tamaños pequeños */
+    }
+
+    .presentacion h2 {
+        font-size: 18px; /* Ajusta el tamaño del título en tamaños pequeños */
+    }
+
+    .presentacion .descripcion {
+        font-size: 16px; /* Ajusta el tamaño del texto de descripción en tamaños pequeños */
+    }
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 480px) {
+    .nav-main {
+        display: none; /* Oculta la barra de navegación en tamaños muy pequeños */
+    }
+
+    #icono-nav {
+        display: block; /* Muestra el icono de navegación en tamaños muy pequeños */
+    }
+
+    .redes {
+        display: none; /* Oculta las redes sociales en tamaños muy pequeños */
+    }
+
+    .presentacion h2 {
+        font-size: 16px; /* Ajusta el tamaño del título en tamaños muy pequeños */
+    }
+
+    .presentacion .descripcion {
+        font-size: 14px; /* Ajusta el tamaño del texto de descripción en tamaños muy pequeños */
+    }
+}

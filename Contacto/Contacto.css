@@ -1,0 +1,220 @@
+/* Estilos del cuerpo del documento */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #d3d3d3;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos del contenido del encabezado */
+.contenido-header {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 30px;
+}
+
+#logo img {
+    border-radius: 25%;
+    width: 50px;
+    height: 50px;
+}
+
+.nav-main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #1ad5ee;
+}
+
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.redes a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.redes a:hover {
+    color: #12ddef;
+}
+
+#icono-nav {
+    color: #fff;
+    display: none;
+    cursor: pointer;
+}
+
+/* Estilos del formulario de contacto */
+.contacto {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.titulo-seccion {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.formulario-contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-contacto .campo {
+    margin-bottom: 20px;
+}
+
+.formulario-contacto label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.formulario-contacto input[type="text"],
+.formulario-contacto input[type="email"],
+.formulario-contacto input[type="tel"],
+.formulario-contacto textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.formulario-contacto textarea {
+    resize: vertical;
+}
+
+.formulario-contacto button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #1ad5ee;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+    background-color: #12ddef;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .contenido-header {
+        padding: 10px 20px;
+        height: auto;
+    }
+
+    .nav-main {
+        display: none;
+    }
+
+    #icono-nav {
+        display: block;
+    }
+
+    .redes {
+        display: none;
+    }
+
+    #nav.responsive {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        height: calc(100vh - 60px);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    #nav.responsive ul {
+        display: block;
+        text-align: center;
+    }
+
+    #nav.responsive ul li {
+        margin: 10px 0;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .formulario-contacto {
+        padding: 20px;
+    }
+
+    .titulo-seccion {
+        font-size: 1.5rem;
+    }
+
+    .formulario-contacto input[type="text"],
+    .formulario-contacto input[type="email"],
+    .formulario-contacto input[type="tel"],
+    .formulario-contacto textarea {
+        padding: 8px;
+    }
+}

@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Estilos del cuerpo del documento */
+body {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    background-color: #d3d3d3;
+    margin: 0px;
+    padding: 0px;
+}
+
+.texto-redondeado {
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenido-header {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+    top: 0;
+    left: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 20px 30px;
+    flex-grow: 2;
+}
+
+#logo img {
+    border-radius: 25%;
+    width: 50px;
+    height: 50px;
+}
+
+.nav-main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #1ad5ee;
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Alineación a la derecha */
+  margin-right: 20px; /* Espacio a la derecha */
+  flex-shrink: 0; /* Evita que las redes sociales se encogan */
+}
+
+.redes a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 10px; /* Espacio entre íconos */
+  transition: color 0.3s ease;
+}
+
+.redes a:hover {
+  color: #12ddef;
+}
+
+.presentacion-container {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imagenes/_22eedba3-5180-4087-a579-cda14da58dc2.jpeg) center center / cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.presentacion {
+    max-width: 1100px;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.presentacion .bienvenida {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.presentacion h2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.presentacion h2 span {
+    font-size: 25px;
+    color: red;
+}
+
+.presentacion .descripcion {
+    max-width: 100%;
+    margin: 25px 50px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.presentacion a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px 0;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.presentacion a:hover {
+    background-color: aqua;
+}
+
+#icono-nav {
+    color: #fff;
+    display: none;
+    cursor: pointer;
+}
+
+/*Servicios*/
+#servicios {
+    margin: 0;
+    padding: 50px 0;
+    text-align: center;
+    
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('imagenes/_1333e096-ee69-4f8c-a9f9-dd98a9a1e705.jpeg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    background-position: center; /* Centra la imagen de fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+#servicios .titulo-seccion {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 28px;
+    text-transform: capitalize;
+    color: #f7f7f7;
+}
+
+#servicios .fila {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#servicios .servicio {
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+#servicios .servicio:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#servicios .servicio h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+#servicios .servicio hr {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 15px;
+    border-color: #ddd;
+}
+
+#servicios .servicio p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+#servicios .servicio .caracteristicas {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+#servicios .servicio .caracteristicas li {
+    margin-bottom: 8px;
+}
+
+#servicios .servicio .caracteristicas li i {
+    margin-right: 8px;
+    color: #5cb85c; /* Verde para características disponibles */
+}
+
+#servicios .servicio .caracteristicas li .fa-xmark {
+    color: #d9534f; /* Rojo para características no disponibles */
+}
+
+.btn-contacto {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-contacto:hover {
+    background-color: #0056b3;
+}
+
+.btn-servicio {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #111135;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-servicio:hover {
+    background-color: #333;
+}
+
+
+/*Conclusion*/
+#conclusion {
+    background-image: url('imagenes/_f27c292f-e342-4251-9b79-cc718d4384c9.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#conclusion .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#conclusion .contenido {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente blanco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+#conclusion .titulo-seccion {
+    font-size: 24px;
+    color: #111135;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+#conclusion p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+  /* Estilos para el menú responsivo */
+  #nav.responsive {
+      display: block;
+      background-color: rgba(0, 0, 0, 0.8);
+      width: 100%; /* Ocupa todo el ancho disponible */
+      height: calc(100vh - 60px); /* Calcula el alto del viewport menos la altura del header */
+      position: absolute;
+      top: 60px; /* Posiciona debajo del header */
+      left: 0;
+      padding: 10px 0;
+      margin: 0;
+  }
+
+  #nav.responsive ul {
+      display: block;
+      text-align: center;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  #nav.responsive ul li {
+      margin: 10px 0;
+      text-align: left; /* Alinea los elementos del menú a la izquierda */
+  }
+}
+
+
+  #nav.responsive ul {
+      display: block !important;
+      text-align: center;
+  }
+
+  #nav.responsive ul li {
+      margin: 5px 0;
+      text-align: left; /* Alinea los elementos del menú a la izquierda */
+  }
+
+  @media screen and (max-width: 800px) {
+    nav.responsive ul {
+        display: block !important;
+        text-align: center;
+    }
+
+    nav.responsive ul li {
+        margin-bottom: 10px; /* Ajusta el margen inferior entre elementos */
+    }
+}
+
+
+/* Media queries para tabletas y dispositivos móviles */
+@media (max-width: 768px) {
+    .nav-main {
+        display: none; /* Oculta la barra de navegación en tamaños pequeños */
+    }
+
+    #icono-nav {
+        display: block; /* Muestra el icono de navegación en tamaños pequeños */
+    }
+
+    .redes {
+        display: none; /* Oculta las redes sociales en tamaños pequeños */
+    }
+
+    .presentacion h2 {
+        font-size: 18px; /* Ajusta el tamaño del título en tamaños pequeños */
+    }
+
+    .presentacion .descripcion {
+        font-size: 16px; /* Ajusta el tamaño del texto de descripción en tamaños pequeños */
+    }
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 480px) {
+    .nav-main {
+        display: none; /* Oculta la barra de navegación en tamaños muy pequeños */
+    }
+
+    #icono-nav {
+        display: block; /* Muestra el icono de navegación en tamaños muy pequeños */
+    }
+
+    .redes {
+        display: none; /* Oculta las redes sociales en tamaños muy pequeños */
+    }
+
+    .presentacion h2 {
+        font-size: 16px; /* Ajusta el tamaño del título en tamaños muy pequeños */
+    }
+
+    .presentacion .descripcion {
+        font-size: 14px; /* Ajusta el tamaño del texto de descripción en tamaños muy pequeños */
+    }
+}
